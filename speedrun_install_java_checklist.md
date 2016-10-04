@@ -85,7 +85,7 @@ If it runs successfully then you have Java and Maven Installed in Windows.
 * `[ ]` install maven with `brew install maven`
 
 * `[ ]` everything is installed, check the environment variables by displaying them on the console
-    * `[ ]` Windows
+    * `[ ]` Mac
         * `[ ]` `echo $JAVA_HOME`
         * `[ ]` `echo $PATH`
 
