@@ -11,6 +11,14 @@
         
 This checklist contains instructions for Windows and Mac.
     
+
+*Windows Install Videos*
+
+* [YouTube Video Showing the Java Install on Windows 10](https://www.youtube.com/watch?v=j-46lYWAHF0)
+
+*Mac Install Videos*
+
+* [YouTube Video Showing the Java Install on a Mac](https://youtu.be/ff5ZsthcSZw)
     
 # Windows Install Speedrun checklist
 
@@ -66,7 +74,7 @@ If it runs successfully then you have Java and Maven Installed in Windows.
 * `[ ]`  download IntelliJ Community Edition from https://www.jetbrains.com/idea
 * `[ ]`  install it
 * `[ ]`  new project from existing sources
-* `[ ]`  open the `pom.xml` from the folder that we placed the downloads from https://github.com/eviltester/startUsingJavaJUnit
+* `[ ]`  open the `pom.xml` from the folder that we  placed the downloads from https://github.com/eviltester/startUsingJavaJUnit
 * `[ ]`  we may need to configure IntelliJ to use the Java SDK we installed earlier, if so, follow the IntelliJ prompts
     * `[ ]` you may need to tell intellij where the SDK is,
         - use the project settings to create an new SDK config
