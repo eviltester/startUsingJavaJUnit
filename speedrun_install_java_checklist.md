@@ -10,16 +10,23 @@
     - check IntelliJ works by running the sample test
         
 This checklist contains instructions for Windows and Mac.
-    
+
+---
+
+## Install Videos
 
 *Windows Install Videos*
 
 * [YouTube Video Showing the Java Install on Windows 10](https://www.youtube.com/watch?v=j-46lYWAHF0)
+* https://www.youtube.com/watch?v=j-46lYWAHF0
 
 *Mac Install Videos*
 
 * [YouTube Video Showing the Java Install on a Mac](https://youtu.be/ff5ZsthcSZw)
+* https://youtu.be/ff5ZsthcSZw
     
+---
+
 # Windows Install Speedrun checklist
 
 ## Install Java Pre-requisites - Install Java Speedrun on Windows
@@ -30,9 +37,13 @@ This checklist contains instructions for Windows and Mac.
     * `[ ]` "mvn -version"
           - if it fails install maven
 
+---
+
 * `[ ]` Download Java
     * `[ ]` search for "download java sdk" (do not install the normal JRE from java.com)
          - http://www.oracle.com/technetwork/java/javase/downloads/index.html
+
+---
 
 * `[ ]` Install Java JDK
     * `[ ]` Windows
@@ -44,6 +55,8 @@ This checklist contains instructions for Windows and Mac.
             - some people add a `JDK_HOME` for the root path as well (I haven't done this)
         * `[ ]` check Java JDK installed by typing `javac -version` in a new command line
 
+---
+
 * `[ ]` Install Maven
     * `[ ]` Download Maven http://maven.apache.org/download.html#Installation
     * `[ ]` Windows
@@ -52,11 +65,14 @@ This checklist contains instructions for Windows and Mac.
         * `[ ]` add `C:\maven_3_3_9\bin` to the `PATH` in System Variables
         * `[ ]` check installed by typing `mvn -version` into a new command window
 
+---
+
 * `[ ]` everything is installed, check the environment variables by displaying them on the console
     * `[ ]` Windows
         * `[ ]` `echo %JAVA_HOME%`
         * `[ ]` `echo %PATH%`
 
+---
 
 * `[ ]` Download JUnit Test Project (this has a simple pom.xml and a basic test to run)
     * `[ ]` visit https://github.com/eviltester/startUsingJavaJUnit
@@ -68,12 +84,17 @@ This checklist contains instructions for Windows and Mac.
 
 If it runs successfully then you have Java and Maven Installed in Windows.
 
+---
+
 ## Install IntelliJ for Java  - Install IntelliJ Java Speedrun on Windows
 
 
 * `[ ]`  download IntelliJ Community Edition from https://www.jetbrains.com/idea
 * `[ ]`  install it
-* `[ ]`  new project from existing sources
+
+---
+
+* `[ ]`  create new project from existing sources
 * `[ ]`  open the `pom.xml` from the folder that we  placed the downloads from https://github.com/eviltester/startUsingJavaJUnit
 * `[ ]`  we may need to configure IntelliJ to use the Java SDK we installed earlier, if so, follow the IntelliJ prompts
     * `[ ]` you may need to tell intellij where the SDK is,
@@ -81,7 +102,8 @@ If it runs successfully then you have Java and Maven Installed in Windows.
           using the `JAVA_HOME` path above
 * `[ ]`  right click on the test and 'run' the test
 * `[ ]`  if it passes it means that Java, Maven, IntelliJ are all now installed and ready to use
-    
+
+---
     
 # Mac Install Speedrun checklist - Homebrew
 
@@ -92,10 +114,14 @@ If it runs successfully then you have Java and Maven Installed in Windows.
 * `[ ]` install jdk with `brew cask install java`
 * `[ ]` install maven with `brew install maven`
 
+---
+
 * `[ ]` everything is installed, check the environment variables by displaying them on the console
     * `[ ]` Mac
         * `[ ]` `echo $JAVA_HOME`
         * `[ ]` `echo $PATH`
+
+---
 
 * `[ ]` Download JUnit Test Project (this has a simple pom.xml and a basic test to run)
     * `[ ]` visit https://github.com/eviltester/startUsingJavaJUnit
@@ -107,6 +133,9 @@ If it runs successfully then you have Java and Maven Installed in Windows.
 
 If it runs successfully then you have Java and Maven Installed on Mac.
 
+---
+
+
 ## Install IntelliJ Community Edition on Mac 
 
 * `[ ]` install IntelliJ IDE Community Edition,
@@ -115,6 +144,7 @@ If it runs successfully then you have Java and Maven Installed on Mac.
     
 * `[ ]` load the 'startUsingJavaJUnit' project into IntelliJ and run the test from the IDE to ensure IntelliJ and JDK and Maven are all working together.    
 
+---
 
 Generic Links:
 ==============
@@ -127,6 +157,8 @@ http://www.oracle.com/technetwork/java/javase/downloads/index.html
 + Download Maven From
     * http://maven.apache.org/download.cgi
 
+---
+
 + sample JUnit test project from
     * https://github.com/eviltester/startUsingJavaJUnit
 
@@ -137,9 +169,27 @@ http://www.oracle.com/technetwork/java/javase/downloads/index.html
     * http://brew.sh
     * https://caskroom.github.io/
 
+---
+
 + How to install Java on Mac
     * http://stackoverflow.com/questions/24342886/how-to-install-java-8-on-mac
     
 + How do uninstall Java on Mac
     * https://www.java.com/en/download/help/mac_uninstall_java.xml
     * http://docs.oracle.com/javase/8/docs/technotes/guides/install/mac_jdk.html
+
+---
+
+# Java For Testers
+
+## A book and a blog teaching Java for non-programmers.
+
+* www.javafortesters.com
+
+By Alan Richardson
+
+* www.eviltester.com
+* www.seleniumsimplified.com
+* www.compendiumdev.co.uk
+* http://uk.linkedin.com/in/eviltester
+* [@eviltester](http://twitter.com/eviltester)
