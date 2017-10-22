@@ -3,7 +3,6 @@ script: mvn test
 jdk:
   - oraclejdk9
   - oraclejdk8
-  - oraclejdk7
-  - openjdk9
+  - oraclejdk8
   - openjdk8
   - openjdk7
