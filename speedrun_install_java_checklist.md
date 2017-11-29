@@ -17,14 +17,16 @@ This checklist contains instructions for Windows and Mac.
 
 *Windows Install Videos*
 
-* [YouTube Video Showing the Java Install on Windows 10](https://www.youtube.com/watch?v=j-46lYWAHF0)
-* https://www.youtube.com/watch?v=j-46lYWAHF0
+* [YouTube Video Showing the Java Install on Windows 10](https://youtu.be/1bDd5B8TA2g)
+* https://youtu.be/1bDd5B8TA2g (Updated November 2017)
+    * previous version https://www.youtube.com/watch?v=j-46lYWAHF0  (4 Oct 2016)
 
 *Mac Install Videos*
 
-* [YouTube Video Showing the Java Install on a Mac](https://youtu.be/ff5ZsthcSZw)
-* https://youtu.be/ff5ZsthcSZw
-    
+* [YouTube Video Showing the Java Install on a Mac](https://youtu.be/vHGdjKuXKAs)
+* https://youtu.be/vHGdjKuXKAs  (Updated November 2017)
+    * previous version https://youtu.be/ff5ZsthcSZw (4 Oct 2016)
+
 ---
 
 # Windows Install Speedrun checklist
@@ -37,7 +39,24 @@ This checklist contains instructions for Windows and Mac.
     * `[ ]` "mvn -version"
           - if it fails install maven
 
+
 ---
+
+## Using Chocolatey
+
+The simple way is to install Chocolatey
+
+- Follow Install instructions https://chocolatey.org/install
+- Using the packages https://chocolatey.org/packages
+- find what we want: (I find the chocolatey search isn't always the best so I use Google as well "site:chocolatey.org Java SE 9 JDK") (or chocolate search "tag:jdk")
+    - `choco install jdk9`
+    - `choco install maven`
+    - `choco install intellijidea-community`
+
+
+---
+
+## Longer Instructions
 
 * `[ ]` Download Java
     * `[ ]` search for "download java sdk" (do not install the normal JRE from java.com)
@@ -138,11 +157,17 @@ If it runs successfully then you have Java and Maven Installed on Mac.
 
 ## Install IntelliJ Community Edition on Mac 
 
+You can install IntelliJ using Homebrew as well by typing:
+
+* `[ ]` `brew cask install intellij-idea-ce`
+
+Or you can install it like a normal Mac application using the instructions below.
+
 * `[ ]` install IntelliJ IDE Community Edition,
     * visit the web site https://www.jetbrains.com/idea/ 
     * download and install the Community Edition
     
-* `[ ]` load the 'startUsingJavaJUnit' project into IntelliJ and run the test from the IDE to ensure IntelliJ and JDK and Maven are all working together.    
+* `[ ]` open the 'startUsingJavaJUnit' project in IntelliJ and run the test from the IDE to ensure IntelliJ and JDK and Maven are all working together.    
 
 ---
 
@@ -151,6 +176,7 @@ Generic Links:
 
 + Download Java SDK From
 http://www.oracle.com/technetwork/java/javase/downloads/index.html
+  - 1.9 http://www.oracle.com/technetwork/java/javase/downloads/jdk9-downloads-3848520.html
   - 1.8 http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
   - 1.7 http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html
 
