@@ -29,34 +29,39 @@ This checklist contains instructions for Windows and Mac.
 
 ---
 
-# Windows Install Speedrun checklist
-
-## Install Java Pre-requisites - Install Java Speedrun on Windows
+## Install Java Pre-requisites
 
 * `[ ]` Check what you need to install by typing console commands
     * `[ ]` "javac -version"
-          - if it fails install java jdk
+          - if it fails then you need to install a Java JDK
     * `[ ]` "mvn -version"
-          - if it fails install maven
+          - if it fails then you need to install maven
+          
+---
 
+# Windows Install Speedrun checklist
 
 ---
 
-## Using Chocolatey
+## Install Java JDK, Maven and IntelliJ Using Chocolatey
 
-The simple way is to install Chocolatey
+The simple way is to install the apps is to use Chocolatey
 
-- Follow Install instructions https://chocolatey.org/install
-- Using the packages https://chocolatey.org/packages
+- Follow Install instructions [chocolatey.org/install](https://chocolatey.org/install)
+- Using the packages [chocolatey.org/packages](https://chocolatey.org/packages)
 - find what we want: (I find the chocolatey search isn't always the best so I use Google as well "site:chocolatey.org Java SE 9 JDK") (or chocolate search "tag:jdk")
-    - `choco install jdk9`
+    - `choco install jdk10`
+        - previously `choco install jdk9`
+        - previously `choco install jdk8`
     - `choco install maven`
     - `choco install intellijidea-community`
 
 
 ---
 
-## Longer Instructions
+### Longer Instructions for Install on Windows
+
+If you used Chocolatey then you can skip this and move to the 'Check the install on Windows' section.
 
 * `[ ]` Download Java
     * `[ ]` search for "download java sdk" (do not install the normal JRE from java.com)
@@ -93,6 +98,21 @@ The simple way is to install Chocolatey
 
 ---
 
+* Install IntelliJ
+    * `[ ]`  download IntelliJ Community Edition from https://www.jetbrains.com/idea
+    * `[ ]`  install it
+
+---
+
+
+## Check the install on Windows
+
+* The following commands should now run from a command line - you might need to start a new command line or possibly reboot to refresh your window settings after installing JDK and Maven.
+    * `[ ]` "javac -version"
+    * `[ ]` "mvn -version"
+    
+If either of the above fail then you have not installed Java or Maven.
+
 * `[ ]` Download JUnit Test Project (this has a simple pom.xml and a basic test to run)
     * `[ ]` visit https://github.com/eviltester/startUsingJavaJUnit
     * `[ ]` download the zip file and unzip somewhere
@@ -105,16 +125,11 @@ If it runs successfully then you have Java and Maven Installed in Windows.
 
 ---
 
-## Install IntelliJ for Java  - Install IntelliJ Java Speedrun on Windows
-
-
-* `[ ]`  download IntelliJ Community Edition from https://www.jetbrains.com/idea
-* `[ ]`  install it
-
----
+## Open and Run the source code from IntelliJ
 
 * `[ ]`  create new project from existing sources
 * `[ ]`  open the `pom.xml` from the folder that we  placed the downloads from https://github.com/eviltester/startUsingJavaJUnit
+    * `[ ]` in IntelliJ use 'Open Project' and select the folder, or the `pom.xml` file
 * `[ ]`  we may need to configure IntelliJ to use the Java SDK we installed earlier, if so, follow the IntelliJ prompts
     * `[ ]` you may need to tell intellij where the SDK is,
         - use the project settings to create an new SDK config
@@ -176,6 +191,7 @@ Generic Links:
 
 + Download Java SDK From
 http://www.oracle.com/technetwork/java/javase/downloads/index.html
+  - 1.10 http://www.oracle.com/technetwork/java/javase/downloads/jdk10-downloads-4416644.html
   - 1.9 http://www.oracle.com/technetwork/java/javase/downloads/jdk9-downloads-3848520.html
   - 1.8 http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
   - 1.7 http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html
