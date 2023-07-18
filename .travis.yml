@@ -1,9 +1,0 @@
-language: java
-script: mvn test
-jdk:
-  - oraclejdk9
-  - oraclejdk8
-  # oracle JDK7 no longer seems to be supported by Travis
-  # - oraclejdk7
-  - openjdk8
-  - openjdk7
