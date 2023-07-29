@@ -1,13 +1,29 @@
 # startUsingJavaJUnit
 
-A simple Java JUnit project to check Java and Maven are installed correctly.
+A simple Java JUnit 4 project to check Java and Maven are installed correctly.
+
+[For a Java JUnit 5 project look here](https://github.com/eviltester/startUsingJavaJUnit5)
+
+This project demonstrates:
+
+- Maven Setup
+- JUnit execution
 
 Clone or download the project.
 
-Preqrequisites:
+Pre-requisites:
 
 * JDK Installed
 * MAVEN Installed
+
+## Pre-requisite Install Instructions
+
+Install instructions can be found in `speedrun_install_java_checklist.md`
+
+Read the [Speedrun Install Java Checklist](https://github.com/eviltester/startUsingJavaJUnit/blob/master/speedrun_install_java_checklist.md)
+for more details.
+
+## Usage
 
 In the root folder where the `pom.xml` resides, type:
 
@@ -46,10 +62,14 @@ Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
 [INFO] ------------------------------------------------------------------------
 ~~~~~~~~
 
-Read the [Java Install Checklist](https://github.com/eviltester/startUsingJavaJUnit/blob/master/speedrun_install_java_checklist.md)
- for more details.
+If you see the `BUILD SUCCESS` then everything has installed properly.
 
-Author: Alan Richardson
+## About
 
-* [JavaForTesters.com](http://javafortesters.com)
-* [Compendium Developments](http://compendiumdev.co.uk)
+Author: [Alan Richardson](https://www.linkedin.com/in/eviltester/)
+
+* [EvilTester.com](https://eviltester.com)
+* [Compendium Developments](https://compendiumdev.co.uk)
+
+- [A Java JUnit 5 version of this project is available](https://github.com/eviltester/startUsingJavaJUnit5)
+    - [github.com/eviltester/startUsingJavaJUnit5](https://github.com/eviltester/startUsingJavaJUnit5)

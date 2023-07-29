@@ -50,9 +50,7 @@ The simple way is to install the apps is to use Chocolatey
 - Follow Install instructions [chocolatey.org/install](https://chocolatey.org/install)
 - Using the packages [chocolatey.org/packages](https://chocolatey.org/packages)
 - find what we want: (I find the chocolatey search isn't always the best so I use Google as well "site:chocolatey.org Java SE 9 JDK") (or chocolate search "tag:jdk")
-    - `choco install jdk10`
-        - previously `choco install jdk9`
-        - previously `choco install jdk8`
+    - `choco install openjdk`
     - `choco install maven`
     - `choco install intellijidea-community`
 
@@ -63,35 +61,32 @@ The simple way is to install the apps is to use Chocolatey
 
 If you used Chocolatey then you can skip this and move to the 'Check the install on Windows' section.
 
-* `[ ]` Download Java
-    * `[ ]` search for "download java sdk" (do not install the normal JRE from java.com)
-         - http://www.oracle.com/technetwork/java/javase/downloads/index.html
+* `[ ]` Download Java SDK from either Adoptium.net or Oracle 
+    * `[ ]` Recommended Adoptium install https://adoptium.net/
+    * `[ ]` Oracle's Open JDK https://openjdk.org/
 
 ---
 
-* `[ ]` Install Java JDK
+* `[ ]` Install The Java JDK
     * `[ ]` Windows
-        - e.g. `C:\Program Files\Java\jdk1.8.0_102`
-        * `[ ]` add the Java "\bin" folder to the path if it hasn't been added
-           e.g. `C:\Program Files\Java\jdk1.8.0_102\bin`
-        * `[ ]` create a JAVA_HOME environment variable while there for the root path
-            e.g. `C:\Program Files\Java\jdk1.8.0_102`
-            - some people add a `JDK_HOME` for the root path as well (I haven't done this)
         * `[ ]` check Java JDK installed by typing `javac -version` in a new command line
+        * `[ ]` add the JDK "\bin" folder to the path if it hasn't been added
+        * `[ ]` create a JAVA_HOME environment variable for the root path of the JDK
 
 ---
 
 * `[ ]` Install Maven
-    * `[ ]` Download Maven http://maven.apache.org/download.html#Installation
+    * `[ ]` Download Maven https://maven.apache.org/download.cgi
     * `[ ]` Windows
+        * Follow the install instructions https://maven.apache.org/install.html
         * `[ ]` Unzip maven to a directory (avoid one with spaces in it)
-            - e.g. `C:\maven_3_3_9`
-        * `[ ]` add `C:\maven_3_3_9\bin` to the `PATH` in System Variables
+            - e.g. `C:\maven_3_9_3`
+        * `[ ]` add `C:\maven_3_9_3\bin` to the `PATH` in System Variables
         * `[ ]` check installed by typing `mvn -version` into a new command window
 
 ---
 
-* `[ ]` everything is installed, check the environment variables by displaying them on the console
+* `[ ]` with everything now installed, check the environment variables by displaying them on the console
     * `[ ]` Windows
         * `[ ]` `echo %JAVA_HOME%`
         * `[ ]` `echo %PATH%`
@@ -145,8 +140,12 @@ If it runs successfully then you have Java and Maven Installed in Windows.
 
 * `[ ]` install homebrew from http://brew.sh/
 * `[ ]` `brew update`
-* `[ ]` install jdk with `brew cask install java`
+* `[ ]` install jdk with one of :
+    - Adoptium.net version `brew install --cask temurin`
+    - Oracle Open JDK version `brew install openjdk`
 * `[ ]` install maven with `brew install maven`
+
+You can also use SDKMan to manage and install different versions of java SDK: https://sdkman.io/
 
 ---
 
@@ -174,7 +173,7 @@ If it runs successfully then you have Java and Maven Installed on Mac.
 
 You can install IntelliJ using Homebrew as well by typing:
 
-* `[ ]` `brew cask install intellij-idea-ce`
+* `[ ]` `brew install --cask intellij-idea-ce`
 
 Or you can install it like a normal Mac application using the instructions below.
 
@@ -190,11 +189,8 @@ Generic Links:
 ==============
 
 + Download Java SDK From
-http://www.oracle.com/technetwork/java/javase/downloads/index.html
-  - 1.10 http://www.oracle.com/technetwork/java/javase/downloads/jdk10-downloads-4416644.html
-  - 1.9 http://www.oracle.com/technetwork/java/javase/downloads/jdk9-downloads-3848520.html
-  - 1.8 http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
-  - 1.7 http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html
+    - Adoptium (recommended): https://adoptium.net/
+    - Oracle:  https://openjdk.org/
 
 + Download Maven From
     * http://maven.apache.org/download.cgi
@@ -202,14 +198,15 @@ http://www.oracle.com/technetwork/java/javase/downloads/index.html
 ---
 
 + sample JUnit test project from
-    * https://github.com/eviltester/startUsingJavaJUnit
+   * JUnit 4 - https://github.com/eviltester/startUsingJavaJUnit
+   * JUnit 5 - https://github.com/eviltester/startUsingJavaJUnit5
 
 + Download IntelliJ from
     * http://www.jetbrains.com/idea/download/
 
 + Mac HomeBrew and Cask
     * http://brew.sh
-    * https://caskroom.github.io/
+    * https://caskroom.github.io
 
 ---
 
@@ -220,18 +217,3 @@ http://www.oracle.com/technetwork/java/javase/downloads/index.html
     * https://www.java.com/en/download/help/mac_uninstall_java.xml
     * http://docs.oracle.com/javase/8/docs/technotes/guides/install/mac_jdk.html
 
----
-
-# Java For Testers
-
-## A book and a blog teaching Java for non-programmers.
-
-* www.javafortesters.com
-
-By Alan Richardson
-
-* www.eviltester.com
-* www.seleniumsimplified.com
-* www.compendiumdev.co.uk
-* http://uk.linkedin.com/in/eviltester
-* [@eviltester](http://twitter.com/eviltester)
