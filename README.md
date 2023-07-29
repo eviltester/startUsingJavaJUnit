@@ -1,4 +1,6 @@
-# startUsingJavaJUnit
+# Start Using Java JUnit
+
+[![build status](https://github.com/eviltester/startUsingJavaJUnit/actions/workflows/build.yml/badge.svg)](https://github.com/eviltester/startUsingJavaJUnit/actions)
 
 A simple Java JUnit 4 project to check Java and Maven are installed correctly.
 
