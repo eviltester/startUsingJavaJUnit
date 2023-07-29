@@ -2,7 +2,7 @@ name: build
 on:
   push:
   schedule:
-    - cron: '1 * * * 6' # weekly cron schedule
+    - cron: '0 1 * * 6' # weekly cron schedule
 jobs:
   compile-and-test:
     runs-on: ubuntu-latest
